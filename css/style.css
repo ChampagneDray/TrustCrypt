@@ -31,11 +31,11 @@ body {
     font-weight: 400;
     line-height: 1.2;
     background: linear-gradient(to left, #050306 0%, black 100%);
-    /* background-image: url(/img/background.jpg);
-    background-position: center; */
+    /* background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612889533_149-p-krasno-sinii-neonovii-fon-197.jpg); */
     width: 100%;
     height: 100vh;
-    /* background-size: cover; */
+    /* background-position: center;
+    background-size: cover; */
     color: #ECF1F0;
     animation: animateBg 10s linear infinite;
 }
@@ -156,8 +156,11 @@ body {
 /* main=========================================================== */
 .main {
     flex-grow: 1;
-    background-image: url(/img/background.jpg);
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1612889533_149-p-krasno-sinii-neonovii-fon-197.jpg);
+    width: 100%;
+    height: 100%;
     background-position: center;
+    background-size: calc(100vh - 64px);
 }
 /* content-first======== */
 .content-first {
@@ -271,16 +274,15 @@ body {
     max-width: 412px;
     width: 100%;
     height: 260px;
-    backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 25px;
     cursor: pointer;
-    transition: .5s ease-in-out;
+    transition: .3s ease-in-out;
     margin-bottom: 160px;
+    backdrop-filter: blur(50px);
 }
 .about__item:hover {
-    backdrop-filter: blur(30px);
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 1);
 }
@@ -319,15 +321,14 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 32px;
-    backdrop-filter: blur(30px);
-    background: rgba(255, 255, 255, 0.05);
-    border: 0.5px solid;
-    border-image-source: linear-gradient(109.41deg, #0FAE96 0%, rgba(18, 14, 39, 0) 48.96%, #7DCFE9 100%), linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+    background: transparent;
+    border: 1px solid;
     border-radius: 10px;
     max-width: 880px;
     width: 100%;
     margin: 0 auto;
     color: #ECF1F0;
+    backdrop-filter: blur(50px);
 }
 .contact__data {
     display: flex;
@@ -396,7 +397,7 @@ input[type=checkbox]+.check {
 }
 input[type=checkbox]+.check::before {
     content: "";
-    background: rgba(255,255,255, 0.05);
+    background: rgba(255,255,255, 0.1);
     border: 0.5px solid rgba(255,255,255, 0.1);
     -webkit-border-radius: 10px;
     border-radius: 10px;
@@ -412,7 +413,7 @@ input[type=checkbox]+.check::before {
     box-sizing: border-box;
 }
 input[type=checkbox]+.check:hover::before {
-    background: rgba(255,255,255, 0.1);
+    background: rgba(255,255,255, 0.2);
     border: 0.5px solid rgba(255,255,255, 0.15);
 }
 input[type=checkbox]:checked+.check::before {
@@ -497,7 +498,6 @@ input[type=checkbox]:checked+.check::after {
 /* footer=================================================================== */
 .footer {
     padding: 64px 0;
-    backdrop-filter: blur(30px);
 }
 .footer__text {
     line-height: 1.24;
@@ -541,6 +541,7 @@ input[type=checkbox]:checked+.check::after {
     width: 100%;
     cursor: pointer;
     color: #fff;
+    backdrop-filter: blur(50px);
 }
 .tabs__btn-item:hover {
     background-color: #ECF1F0;
@@ -567,7 +568,8 @@ input[type=checkbox]:checked+.check::after {
     display: grid;
     gap: 16px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 15px;
     transition: transform .2s ease;
@@ -677,15 +679,15 @@ input[type=checkbox]:checked+.check::after {
     gap: 24px;
     max-width: 566px;
     width: 100%;
+    backdrop-filter: blur(50px);
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     backdrop-filter: blur(30px);
 }
 .about-img {
     padding: 42px 16px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
 .about-content {
@@ -734,6 +736,132 @@ input[type=checkbox]:checked+.check::after {
 
 
 /* ============================catalog_blog================================= */
+.catalog-blog__title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 1.21;
+    color: #ECF1F0;
+    margin: 64px 0 32px;
+    max-width: 611px;
+}
+.catalog-blog__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.21;
+    color: #D4D4D4;
+    margin-bottom: 32px;
+    max-width: 618px;
+}
+.tabs__btn {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.tabs__btn-item {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.24;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    max-width: 170px;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    backdrop-filter: blur(50px);
+}
+.tabs__btn-item:hover {
+    background-color: #ECF1F0;
+    border: 1px solid #ECF1F0;
+    border-radius: 5px;
+    color: #11011E;
+}
+.tabs__btn-item--active {
+    background-color: #ECF1F0;
+    border-radius: 5px;
+    color: #11011E;
+}
+.tabs__content-item {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    max-width: 412px;
+    width: 100%;
+}
+.tabs__content-item.tabs__content-item--active {
+    display: grid;
+}
+.card {
+    display: grid;
+    gap: 16px;
+    padding: 15px;
+    backdrop-filter: blur(50px);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    transition: transform .2s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+.card__img {
+    max-width: 380px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 7px;
+}
+.pagination {
+    width: 99px;
+    height: 3px;
+    background-color: #0FAE96;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+.card-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 32px;
+    max-width: 110px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 12px;
+    background: #0FAE96;
+    -webkit-border-radius: 60px;
+    border-radius: 50px
+px
+;
+    text-decoration: none;
+    color: #ECF1F0;
+}
+.tabs-item__name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.21;
+    color: #ECF1F0;
+}
+.tabs-item__name:hover {
+    color: #0FAE96;
+}
+.tabs-item__text {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.24;
+    color: #D4D4D4;
+}
 
 
 
@@ -754,9 +882,15 @@ input[type=checkbox]:checked+.check::after {
     padding-bottom: .5px;
 }
 .whatsapp__link {
+    color: #ECF1F0;
+}
+.whatsapp__link:hover {
     color: #0dae96;
 }
 .telegram__link {
+    color: #ECF1F0;
+}
+.telegram__link:hover {
     color: #0dae96;
 }
 .contacts-email {
@@ -764,8 +898,10 @@ input[type=checkbox]:checked+.check::after {
     gap: 5px; 
 }
 .email__item__link {
+    color: #ECF1F0;
+}
+.email__item__link:hover {
     color: #0dae96;
-    margin: 0;
 }
 
 
@@ -777,14 +913,9 @@ input[type=checkbox]:checked+.check::after {
     background-position: 50%;
     min-height: 430px;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     padding: 1em;
-    box-sizing: border-box;
     margin-top: 64px;
-    filter: brightness(0.5);
+    filter: brightness(0.75);
 }
 .story-title {
     text-align: center;
