@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home - TrustCrypt</title>
+</head>
+<body>
+<!-- wrapper -->
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <nav class="nav">
+                    <div class="nav__logo">
+                        <img src="img/logo.svg" alt="logo" class="logo__img">
+                        <h1 class="logo__text">
+                            Trustcrypt
+                        </h1>
+                    </div>
+                    <div class="nav__inner">
+                        <div class="nav__menu">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a href="index.html" class="nav__link nav__link--active">
+                                            Главная
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="catalog_product.html" class="nav__link">
+                                            Продукты
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="catalog_blog.html" class="nav__link">
+                                            Блог
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="contacts.html" class="nav__link">
+                                            Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav__select">
+                            <div class="select__custom">
+                                <select class="select__list">
+                                    <option value="0" class="select__option">
+                                        &#127765; RU
+                                    </option>
+                                    <option value="1" class="select__option">
+                                        &#127758; AE
+                                    </option>
+                                    <option value="2" class="select__option">
+                                        &#127761; UK
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="nav__social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="https://t.me/TrustCryptBlog" class="social__link" target="_blank">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM17.568 8.16C17.388 10.056 16.608 14.664 16.212 16.788C16.044 17.688 15.708 17.988 15.396 18.024C14.7 18.084 14.172 17.568 13.5 17.124C12.444 16.428 11.844 15.996 10.824 15.324C9.636 14.544 10.404 14.112 11.088 13.416C11.268 13.236 14.34 10.44 14.4 10.188C14.4083 10.1498 14.4072 10.1102 14.3968 10.0726C14.3863 10.0349 14.3668 10.0004 14.34 9.972C14.268 9.912 14.172 9.936 14.088 9.948C13.98 9.972 12.3 11.088 9.024 13.296C8.544 13.62 8.112 13.788 7.728 13.776C7.296 13.764 6.48 13.536 5.868 13.332C5.112 13.092 4.524 12.96 4.572 12.54C4.596 12.324 4.896 12.108 5.46 11.88C8.964 10.356 11.292 9.348 12.456 8.868C15.792 7.476 16.476 7.236 16.932 7.236C17.028 7.236 17.256 7.26 17.4 7.38C17.52 7.476 17.556 7.608 17.568 7.704C17.556 7.776 17.58 7.992 17.568 8.16Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://twitter.com/keklick1337" class="social__link" target="_blank">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 0C5.3725 0 0 5.3725 0 12C0 18.6275 5.3725 24 12 24C18.6275 24 24 18.6275 24 12C24 5.3725 18.6275 0 12 0ZM16.8813 9.83C16.8862 9.9325 16.8875 10.035 16.8875 10.135C16.8875 13.26 14.5113 16.8612 10.1638 16.8612C8.87912 16.8634 7.62121 16.4944 6.54125 15.7987C6.725 15.8212 6.91375 15.83 7.105 15.83C8.2125 15.83 9.23125 15.4538 10.04 14.8188C9.54715 14.8091 9.06959 14.6459 8.67389 14.3519C8.27819 14.0579 7.98406 13.6478 7.8325 13.1788C8.18644 13.2461 8.55106 13.2319 8.89875 13.1375C8.36381 13.0293 7.88275 12.7395 7.53714 12.3171C7.19152 11.8947 7.00263 11.3658 7.0025 10.82V10.7913C7.32125 10.9675 7.68625 11.075 8.07375 11.0875C7.57225 10.7537 7.21723 10.2408 7.08131 9.65392C6.94538 9.06699 7.03881 8.45032 7.3425 7.93C7.93619 8.66 8.67658 9.25718 9.51571 9.68289C10.3548 10.1086 11.274 10.3533 12.2137 10.4012C12.0943 9.89414 12.1457 9.36176 12.36 8.88688C12.5743 8.412 12.9395 8.02124 13.3988 7.77533C13.8582 7.52942 14.3858 7.44215 14.8999 7.52709C15.4139 7.61203 15.8855 7.86441 16.2412 8.245C16.7702 8.14034 17.2775 7.94632 17.7413 7.67125C17.565 8.21892 17.1958 8.68397 16.7025 8.98C17.1711 8.92356 17.6286 8.7976 18.06 8.60625C17.7431 9.08112 17.3439 9.49555 16.8813 9.83Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="https://api.whatsapp.com/send/?phone=971588530989&text&type=phone_number&app_absent=0" class="social__link" target="_blank">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.415 14.382C17.117 14.233 15.656 13.515 15.384 13.415C15.112 13.316 14.914 13.267 14.715 13.565C14.517 13.861 13.948 14.531 13.775 14.729C13.601 14.928 13.428 14.952 13.131 14.804C12.834 14.654 11.876 14.341 10.741 13.329C9.858 12.541 9.261 11.568 9.088 11.27C8.915 10.973 9.069 10.812 9.218 10.664C9.352 10.531 9.515 10.317 9.664 10.144C9.813 9.96998 9.862 9.84598 9.961 9.64698C10.061 9.44898 10.011 9.27598 9.936 9.12698C9.862 8.97798 9.268 7.51498 9.02 6.91998C8.779 6.34098 8.534 6.41998 8.352 6.40998C8.178 6.40198 7.98 6.39998 7.782 6.39998C7.584 6.39998 7.262 6.47398 6.99 6.77198C6.717 7.06898 5.95 7.78798 5.95 9.25098C5.95 10.713 7.014 12.126 7.163 12.325C7.312 12.523 9.258 15.525 12.239 16.812C12.949 17.118 13.502 17.301 13.933 17.437C14.645 17.664 15.293 17.632 15.805 17.555C16.375 17.47 17.563 16.836 17.811 16.142C18.058 15.448 18.058 14.853 17.984 14.729C17.91 14.605 17.712 14.531 17.414 14.382H17.415ZM11.993 21.785H11.989C10.2184 21.7853 8.48037 21.3093 6.957 20.407L6.597 20.193L2.855 21.175L3.854 17.527L3.619 17.153C2.62914 15.5773 2.10529 13.7538 2.108 11.893C2.11 6.44298 6.544 2.00898 11.997 2.00898C14.637 2.00898 17.119 3.03898 18.985 4.90698C19.9054 5.82356 20.6349 6.91355 21.1313 8.11388C21.6277 9.31421 21.8811 10.6011 21.877 11.9C21.875 17.35 17.441 21.785 11.993 21.785ZM20.405 3.48798C19.3032 2.3789 17.9922 1.49952 16.5481 0.90078C15.1039 0.302044 13.5553 -0.00413728 11.992 -2.00576e-05C5.438 -2.00576e-05 0.102 5.33498 0.1 11.892C0.096963 13.9787 0.644374 16.0294 1.687 17.837L0 24L6.304 22.346C8.04787 23.2961 10.0021 23.7939 11.988 23.794H11.993C18.547 23.794 23.883 18.459 23.885 11.901C23.8898 10.3383 23.5848 8.79008 22.9874 7.34601C22.3901 5.90195 21.5124 4.59065 20.405 3.48798Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <div class="container">
+                <section class="content-first">
+                    <div class="first__text">
+                        <h1 class="text__title">
+                            Передовая кибербезопасность для любой компании 
+                        </h1>
+                        <h2 class="text__subtitle">
+                            Защитите ваш бизнес от всех видов киберугроз
+                            с помощью решений мирового класса. 
+                        </h2>
+                        <a href="our_story.html" class="text__link">
+                            Подробнее
+                        </a>
+                    </div>
+                    <img src="img/content__photo.png" alt="content__photo" class="content__photo">
+                </section>
+                <section class="content-second">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/slider.png" alt="slide__img" class="slide__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slider2.png" alt="slide__img" class="slide__img">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/slider3.png" alt="slide__img" class="slide__img">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="second__text">
+                        <h1 class="text__title">
+                            Кибербезопасность нового поколения
+
+                        </h1>
+                        <h2 class="text__subtitle">
+                            Масштабируемая защита от самых сложных
+                            киберугроз, учитывающая потребности вашего бизнеса. 
+                        </h2>
+                    </div>
+                </section>
+                <section class="content-tools">
+                    <h2 class="tools__title">
+                        Инструменты
+                    </h2>
+                    <h3 class="tools__subtitle">
+                        Тестирование на проникновение позволяет ответить на вопрос,
+                        как кто-то со злым умыслом может вмешаться в вашу сеть.
+                    </h3>
+                    <ul class="tools__list">
+                        <li class="tools__item">
+                            <img src="img/Metasploit.png" alt="tools" class="tools__img">
+                        </li>
+                        <li class="tools__item">
+                            <img src="img/Metasploit.png" alt="tools" class="tools__img">
+                        </li>
+                        <li class="tools__item">
+                            <img src="img/Metasploit.png" alt="tools" class="tools__img">
+                        </li>
+                        <li class="tools__item">
+                            <img src="img/Metasploit.png" alt="tools" class="tools__img">
+                        </li>
+                    </ul>
+                </section>
+                <section class="content-about">
+                    <h2 class="about__title">
+                        Наши продукты направлены на вашу безопасность. 
+                    </h2>
+                    <h3 class="about__subtitle">
+                        Мы придерживаемся в своей работе простого принципа:
+                        детектировать и блокировать любую вредоносную атаку.
+                    </h3>
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <img src="img/anon.svg" alt="icon" class="about__icon">
+                            <h3 class="about__text">
+                                Анонимность
+                            </h3>
+                        </li>
+                        <li class="about__item">
+                            <img src="img/Vector.svg" alt="icon" class="about__icon">
+                            <h3 class="about__text">
+                                Проверка на наличие угроз
+                            </h3>
+                        </li>
+                        <li class="about__item">
+                            <img src="img/shield.svg" alt="icon" class="about__icon">
+                            <h3 class="about__text">
+                                Обнаружение и предотвращение аттак
+                            </h3>
+                        </li>
+                    </ul>
+                </section>
+                <section class="content-contact">
+                    <h2 class="contact__title">
+                        Вы можете связаться с нами
+                        удобным для Вас способом
+                    </h2>
+                    <form action="#" class="contact__form">
+                        <div class="contact__data">
+                            <input class="contact__item" type="text" id="name" placeholder="Как к Вам обращаться?">
+                            <input class="contact__item" type="text" id="company" placeholder="Какую компанию Вы представляете?">
+                            <input class="contact__item" type="email" id="email" placeholder="Адрес электронной почты">
+                            <textarea class="contact__item" id="message" rows="5" placeholder="Введите ваше сообщение"></textarea>
+                            <span class="check-list-item">
+                                <label for="agree">
+                                    <input type="checkbox" name="agree" id="agree" value="1" aria-invalid="false">
+                                    <span class="check">
+                                        Я согласен на обработку персональных данных
+                                    </span>
+                                </label>
+                            </span>
+                            <button class="contact__btn" type="submit">Отправить данные</button>
+                        </div>
+                        <div class="contact__map">
+                            <div class="contact__location">
+                                <ul class="location__list">
+                                    <li class="item__map">
+                                        <img src="img/location__map.svg" alt="local" class="local__map">
+                                        <span>Ленинградский пр-т., 27, к2</span>
+                                    </li>
+                                    <li class="item__phone">
+                                        <a href="tel:74950000000" class="phone__link">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 10.999H22C22 5.869 18.127 2 12.99 2V4C17.052 4 20 6.943 20 10.999Z" />
+                                                <path d="M13 7.99999C15.103 7.99999 16 8.89699 16 11H18C18 7.77499 16.225 5.99999 13 5.99999V7.99999ZM16.422 13.443C16.2299 13.2683 15.9774 13.1752 15.7178 13.1832C15.4583 13.1912 15.212 13.2998 15.031 13.486L12.638 15.947C12.062 15.837 10.904 15.476 9.71204 14.287C8.52004 13.094 8.15904 11.933 8.05204 11.361L10.511 8.96699C10.6975 8.78612 10.8062 8.53982 10.8142 8.2802C10.8222 8.02059 10.7289 7.76804 10.554 7.57599L6.85904 3.51299C6.68408 3.32035 6.44092 3.2035 6.18119 3.18725C5.92146 3.17101 5.66564 3.25665 5.46804 3.42599L3.29804 5.28699C3.12515 5.46051 3.02196 5.69145 3.00804 5.93599C2.99304 6.18599 2.70704 12.108 7.29904 16.702C11.305 20.707 16.323 21 17.705 21C17.907 21 18.031 20.994 18.064 20.992C18.3086 20.9783 18.5394 20.8747 18.712 20.701L20.572 18.53C20.7415 18.3325 20.8273 18.0768 20.8113 17.817C20.7952 17.5573 20.6785 17.3141 20.486 17.139L16.422 13.443Z" />
+                                            </svg>
+                                            <span>+7 (495) 000 - 00 - 00</span>
+                                        </a>
+                                    </li>
+                                    <li class="item__email">
+                                        <a href="mailto:admin@trustcrypt.com" class="email__link">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 4H6C4.897 4 4 4.897 4 6V11H6V8L12.4 12.8C12.5732 12.9297 12.7837 12.9998 13 12.9998C13.2163 12.9998 13.4268 12.9297 13.6 12.8L20 8V17H12V19H20C21.103 19 22 18.103 22 17V6C22 4.897 21.103 4 20 4ZM13 10.75L6.666 6H19.334L13 10.75Z" />
+                                                <path d="M2 12H9V14H2V12ZM4 15H10V17H4V15ZM7 18H11V20H7V18Z" />
+                                            </svg>
+                                            <span>admin@trustcrypt.com</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <img src="img/location.png" alt="location" class="location__img">
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container">
+                <p class="footer__text">
+                    © 2022 LLC Trustcrypt. All rights reserved.
+                </p>
+            </div>
+        </footer>
+    </div>
+<!-- script js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
